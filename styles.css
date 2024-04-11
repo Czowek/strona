@@ -1,0 +1,68 @@
+* {
+    cursor: url(pointer.cur);
+  }
+  
+  body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  pre,
+  h1 {
+    color: #fff;
+    font-family: 'Courier New', monospace;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #eaeaea;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #ff0000; /* Red color on hover */
+  }
+  
+  .a {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: visibility 0s, opacity 1.2s;
+    padding: 16px;
+    margin: 16px;
+    border: 2px solid #fff;
+    text-align: center;
+  }
+  
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  #text {
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  /* Blinking effect for the "tap/click anywhere to enter" message */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #msg pre {
+    animation: blink 1.5s infinite;
+  }
+  
