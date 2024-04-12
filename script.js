@@ -2,10 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let a = document.querySelector(".a");
     let d = document.getElementById("msg");
     let titleExpressions = [">.< - Czowek.pl", "x_x - Czowek.pl", "0_0 - Czowek.pl", "ಠ_ಠ - Czowek.pl", "ʕ•ᴥ•ʔ - Czowek.pl"];
-    let musicFiles = ["x_x.mp3", "0_0.mp3", ">.<.mp3"]; // Add your music file names here
-    let titleIndex = 0;
-    let musicIndex = 0;
-    let audio = document.getElementById("music");
+    let currentIndex = 0;
 
     function clickHandler() {
         document.removeEventListener("click", clickHandler);
@@ -13,23 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
             d.remove();
         }, 100);
         a.classList.add("visible");
-        audio.src = musicFiles[musicIndex];
-        audio.play();
+        document.getElementById("music").play();
     }
 
     function changeTitle() {
-        document.title = titleExpressions[titleIndex];
-        titleIndex = (titleIndex + 1) % titleExpressions.length;
-    }
-
-    function playNextMusic() {
-        musicIndex = (musicIndex + 1) % musicFiles.length;
-        audio.src = musicFiles[musicIndex];
-        audio.play();
+        document.title = titleExpressions[currentIndex];
+        currentIndex = (currentIndex + 1) % titleExpressions.length;
     }
 
     document.addEventListener("click", clickHandler);
     setInterval(changeTitle, 1000);
-
-    audio.addEventListener("ended", playNextMusic);
-});
