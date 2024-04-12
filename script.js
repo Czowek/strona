@@ -20,3 +20,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener("click", clickHandler);
     setInterval(changeTitle, 1000);
+});
