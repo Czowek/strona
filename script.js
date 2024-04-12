@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let a = document.querySelector(".a");
     let d = document.getElementById("msg");
-    let titleExpressions = [">.<", "x_x", "0_0", "ಠ_ಠ", "ʕ•ᴥ•ʔ"];
+    let titleExpressions = [">.< - Czowek.pl", "x_x - Czowek.pl", "0_0 - Czowek.pl", "ಠ_ಠ - Czowek.pl", "ʕ•ᴥ•ʔ - Czowek.pl"];
     let currentIndex = 0;
 
     function clickHandler() {
