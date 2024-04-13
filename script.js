@@ -26,6 +26,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Interval for changing title
     setInterval(changeTitle, 1000);
 
-    // Update visit count on page load
-    updateVisitCount();
 });
