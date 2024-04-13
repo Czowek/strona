@@ -20,14 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
         currentIndex = (currentIndex + 1) % titleExpressions.length;
     }
 
-    // Function to update visit count
-    function updateVisitCount() {
-        let count = localStorage.getItem("visitCount");
-        count = count ? parseInt(count) + 1 : 1;
-        document.getElementById("count").textContent = count;
-        localStorage.setItem("visitCount", count);
-    }
-
     // Event listener for click event
     document.addEventListener("click", clickHandler);
 
