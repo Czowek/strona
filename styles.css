@@ -81,14 +81,3 @@ footer {
   position: fixed;
   bottom: 0;
 }
-
-#visitCount {
-  font-size: 16px;
-  margin-top: 20px;
-  color: #fff;
-  font-family: 'Courier New', monospace;
-}
-
-#visitCount span {
-  color: #ff0000; /* Change color to red */
-}
