@@ -1,75 +1,94 @@
 * {
-    cursor: url(pointer.cur);
-  }
-  
-  body {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  pre,
-  h1 {
-    color: #fff;
-    font-family: 'Courier New', monospace;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #eaeaea;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  a:hover {
-    color: #ff0000; 
-  }
-  
-  .a {
-    visibility: hidden;
-    position: absolute;
-    opacity: 0;
-    transition: visibility 0s, opacity 1.2s;
-    padding: 16px;
-    margin: 16px;
-    border: 2px solid #fff;
-    text-align: center;
-  }
-  
-  .visible {
-    visibility: visible;
+  cursor: url(pointer.cur);
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+pre,
+h1 {
+  color: #fff;
+  font-family: 'Courier New', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #eaeaea;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff0000; 
+}
+
+.a {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: visibility 0s, opacity 1.2s;
+  padding: 16px;
+  margin: 16px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+#text {
+  border-bottom: 1px solid #ffffff;
+}
+
+
+@keyframes blink {
+  0% {
     opacity: 1;
-    display: block;
   }
-  
-  #text {
-    border-bottom: 1px solid #ffffff;
+  50% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
 
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  #msg pre {
-    animation: blink 1.5s infinite;
-  }
+#msg pre {
+  animation: blink 1.5s infinite;
+}
 
-  #kot {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-  }
-  
+#kot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+#visitCount {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+}
+
+#visitCount span {
+  color: #ff0000; /* Change color to red */
+}
