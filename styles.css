@@ -81,3 +81,10 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+#krolik {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10;
+}
