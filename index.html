@@ -21,20 +21,11 @@
   <pre><a href="https://discord.com/invite/ez-shop">discord</a></pre>
   <pre><a href="https://instagram.com/najwiekszy.polski.craszer">instagram</a></pre>
   <pre><a href="https://www.facebook.com/groups/646532663109909">grupa facebook</a></pre>
-  <div id="visitCount">wejscia: <span id="count">0</span></div>
 <div id="kot">
   <pre>/\_/\
 ( o.o )</pre>
 </div>
 </div>
 <script src="script.js"></script>
-<script>
-fetch('counter.php')
-  .then(response => response.text())
-  .then(count => {
-    document.getElementById('count').textContent = count;
-  })
-  .catch(error => console.error('Error fetching count:', error));
-</script>
 </body>
 </html>
