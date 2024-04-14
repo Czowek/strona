@@ -47,6 +47,8 @@ a:hover {
 
 #text {
   border-bottom: 1px solid #ffffff;
+  color: #fff;
+  font-family: 'Courier New', monospace;
 }
 
 

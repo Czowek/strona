@@ -23,4 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(changeTitle, 1000);
 
+    const czowekpl = document.getElementById('text');
+        
+    const typewriter = new Typewriter(czowekpl, {
+        loop: true,
+        delay: 150, 
+        deleteSpeed: 20,
+    });
+        
+    typewriter
+        .typeString('czowek.pl') 
+        .start(); 
 });
