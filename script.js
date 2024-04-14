@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let titleExpressions = [">.< - Czowek.pl", "x_x - Czowek.pl", "0_0 - Czowek.pl", "ಠ_ಠ - Czowek.pl", "ʕ•ᴥ•ʔ - Czowek.pl"];
     let currentIndex = 0;
 
-    // Function to handle click event
     function clickHandler() {
         document.removeEventListener("click", clickHandler);
         setTimeout(function() {
@@ -12,18 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 100);
         a.classList.add("visible");
         document.getElementById("music").play();
+        document.getElementById("vid").play();
     }
 
-    // Function to change title periodically
     function changeTitle() {
         document.title = titleExpressions[currentIndex];
         currentIndex = (currentIndex + 1) % titleExpressions.length;
     }
 
-    // Event listener for click event
     document.addEventListener("click", clickHandler);
 
-    // Interval for changing title
     setInterval(changeTitle, 1000);
 
 });
