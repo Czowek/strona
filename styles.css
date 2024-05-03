@@ -98,3 +98,28 @@ footer {
   min-width: 100%;
   min-height: 100%;
 }
+
+#martyncia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  border: 1px solid #fff;
+  width: 250px; 
+}
+
+#martyncia h2 {
+  color: white;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 5px;
+}
+
+#martyncia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
