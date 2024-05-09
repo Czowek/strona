@@ -1,0 +1,65 @@
+/* General styles */
+* {
+    cursor: url(text.cur), auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Pre and text styling */
+pre {
+    color: #ffffff; /* White text */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+/* Links styling */
+a {
+    color: #eaeaea; /* Light gray text */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff0000; /* Red text on hover */
+}
+
+/* Div class a styling */
+.a {
+    visibility: visible;
+    position: absolute;
+    opacity: 100;
+    transition: visibility 0s, opacity 1.2s;
+    padding: 16px;
+    border: 2px solid #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+/* Make div class a visible */
+.a.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+pre {
+    animation: blink 1.5s infinite;
+}

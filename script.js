@@ -32,6 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
         
     typewriter
-        .typeString('czowek.pl') 
+        .typeString("czowek.pl") 
         .start(); 
 });
