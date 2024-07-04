@@ -1,5 +1,5 @@
 * {
-  cursor: url(text.cur);
+  cursor: url(https://cdn.custom-cursor.com/db/19270/32/color-french-mauve-cursor.png);
 }
 
 body {
@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 pre,
@@ -51,7 +52,6 @@ a:hover {
   font-family: 'Courier New', monospace;
 }
 
-
 @keyframes blink {
   0% {
     opacity: 1;
@@ -70,9 +70,9 @@ a:hover {
 
 #kot {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
 }
 
 footer {
@@ -86,9 +86,9 @@ footer {
 
 #krolik {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 10;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
 }
 
 #vid {
@@ -109,17 +109,50 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   border: 1px solid #fff;
-  width: 250px; 
+  width: 90%; /* Adjust width for mobile */
+  max-width: 300px;
 }
 
 #martyncia h2 {
   color: white;
   font-family: 'Courier New', monospace;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 #martyncia img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  #kot, #krolik {
+    bottom: 5px;
+    margin: 5px;
+  }
+
+  footer {
+    padding: 5px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  #kot, #krolik {
+    bottom: 2px;
+    margin: 2px;
+  }
+
+  footer {
+    padding: 5px;
+    font-size: 0.8em;
+  }
 }
