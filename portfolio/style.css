@@ -28,7 +28,8 @@ header {
   font-family: 'monospace', monospace;
 }
 
-header h1 {
+header, 
+h1 {
   color: transparent;
   display: inline-block;
   font-family: 'monospace', monospace;
@@ -74,6 +75,7 @@ header h1 {
   background-color: #20202000;
   border: 1px solid #343a40;
   color: #ffffff;
+  font-family: 'monospace', monospace;
 }
 
 .card:hover {
@@ -89,19 +91,21 @@ header h1 {
 
 .card-body {
   padding: 20px;
-
+  font-family: 'monospace', monospace;
 }
 
 .card-title {
   color: #ffffff;
+  font-family: 'monospace', monospace;
 }
 
 .card-text {
   color: #ced4da;
+  font-family: 'monospace', monospace;
 }
 
 .btn-primary {
-
+  font-family: 'monospace', monospace;
   border-color: #007bff;
 }
 
@@ -129,6 +133,7 @@ a:hover {
   margin: 16px;
   border: 2px solid #ffffff;
   text-align: center;
+  font-family: 'monospace', monospace;
 }
 
 .visible {
@@ -140,5 +145,5 @@ a:hover {
 #text {
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
-  font-family: 'Courier New', monospace;
+  font-family: 'monospace', monospace;
 }
