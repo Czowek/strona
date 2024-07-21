@@ -30,7 +30,7 @@ header {
 
 header, 
 h1 {
-  color: transparent;
+  color: #0055ff;
   display: inline-block;
   font-family: 'monospace', monospace;
 }
