@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("music").play();
         document.getElementById("vid").play();
     }
+    
+    var audio = document.getElementById("music");
+    audio.volume = 0.2;
 
     function changeTitle() {
         document.title = titleExpressions[currentIndex];
